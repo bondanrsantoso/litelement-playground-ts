@@ -1,0 +1,35 @@
+{
+  "name": "polymer-playground-ts",
+  "version": "1.0.0",
+  "description": "Polymer litelement playground in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bondanrsantoso/litelement-playground-ts.git"
+  },
+  "keywords": [
+    "lit-element",
+    "polymer",
+    "typescript",
+    "ts"
+  ],
+  "author": "BondanRS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bondanrsantoso/litelement-playground-ts/issues"
+  },
+  "homepage": "https://github.com/bondanrsantoso/litelement-playground-ts#readme",
+  "dependencies": {
+    "lit-element": "^2.1.0",
+    "lit-html": "^1.1.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.5.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}

@@ -1006,7 +1006,7 @@ UpdatingElement.finalized = true;
 /*!*************************************************!*\
   !*** ./node_modules/lit-element/lit-element.js ***!
   \*************************************************/
-/*! exports provided: html, svg, TemplateResult, SVGTemplateResult, LitElement, defaultConverter, notEqual, UpdatingElement, customElement, property, query, queryAll, eventOptions, supportsAdoptingStyleSheets, CSSResult, unsafeCSS, css */
+/*! exports provided: defaultConverter, notEqual, UpdatingElement, customElement, property, query, queryAll, eventOptions, html, svg, TemplateResult, SVGTemplateResult, supportsAdoptingStyleSheets, CSSResult, unsafeCSS, css, LitElement */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3188,6 +3188,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+// import "bootstrap"
 let HelloWorld = class HelloWorld extends lit_element__WEBPACK_IMPORTED_MODULE_0__["LitElement"] {
     constructor() {
         super();
@@ -3195,8 +3196,11 @@ let HelloWorld = class HelloWorld extends lit_element__WEBPACK_IMPORTED_MODULE_0
     }
     render() {
         return lit_element__WEBPACK_IMPORTED_MODULE_0__["html"] `
-      <h1 class="lead">Hello ${this.name}</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, consequuntur. Dignissimos rem labore corrupti ad quaerat quam atque, nemo sequi doloremque ducimus voluptas, vitae quisquam doloribus molestias itaque repellendus esse!</p>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <div class="container">
+        <h1 class="display-4">Hello ${this.name}</h1>
+        <slot></slot>
+      </div>
     `;
     }
 };
@@ -3224,8 +3228,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/HelloWorld */ "./src/components/HelloWorld.ts");
 
 
+// import "bootstrap/dist/css/bootstrap.min.css"
 const template = lit_html__WEBPACK_IMPORTED_MODULE_0__["html"] `
-  <hello-world name="Bondan"/>
+  <hello-world name="Bondan">
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quibusdam id est a, laborum sint culpa eligendi fugiat facilis, dolore itaque illo distinctio porro temporibus dolores officia voluptatum, commodi ipsam.</p>
+  </hello-world>
 `;
 Object(lit_html__WEBPACK_IMPORTED_MODULE_0__["render"])(template, document.body);
 

@@ -24,7 +24,7 @@
   "homepage": "https://github.com/bondanrsantoso/litelement-playground-ts#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lit-element": "^2.1.0",
     "lit-html": "^1.1.0",
     "popper.js": "^1.15.0"
